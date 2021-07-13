@@ -20,7 +20,7 @@ public class GreetingController {
     @Scheduled(fixedRate = 1000)
     public void greeting() throws Exception {
         Message message = new Message();
-        message.setMessage("ANAN");
+        message.setMessage("S.A.");
         this.messagingTemplate.convertAndSend("/topic", message);
     }
 
